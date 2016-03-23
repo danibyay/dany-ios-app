@@ -26,10 +26,14 @@ class DBGWelcomeViewController: UIViewController {
     }
 
     @IBAction func buscarWasPressed(sender: AnyObject) {
-        print("buscar was pressed")
+        self.presentController("NavigationController")
     }
     @IBAction func anunciarWasPressed(sender: AnyObject) {
         print("no hay nada aquí aún")
     }
 
+    func presentController(storyboardId: String) {
+        let controller = self.storyboard?.instantiateViewControllerWithIdentifier(storyboardId)
+        self.presentViewController(controller!, animated: true, completion: nil)
+    }
 }

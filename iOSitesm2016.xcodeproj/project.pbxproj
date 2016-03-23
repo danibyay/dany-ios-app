@@ -12,6 +12,7 @@
 		0D1009C01C9B039F00A54261 /* DBGLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1009BF1C9B039F00A54261 /* DBGLoginViewController.swift */; };
 		0D56CA951C77F40D008BF765 /* MyStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D56CA941C77F40D008BF765 /* MyStyle.swift */; };
 		0D67773C1CA336C4009243DD /* LoginOrSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D67773B1CA336C4009243DD /* LoginOrSignupViewController.swift */; };
+		0D67773E1CA34FA6009243DD /* DBGWelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D67773D1CA34FA6009243DD /* DBGWelcomeViewController.swift */; };
 		0D6F588A1C7F4AB70067B98E /* EditArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6F58891C7F4AB70067B98E /* EditArticleViewController.swift */; };
 		0D7C5E881CA3182400EBBF42 /* SwiftHEXColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7C5E871CA3182400EBBF42 /* SwiftHEXColors.swift */; };
 		0D7C5E8A1CA32CF900EBBF42 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D7C5E891CA32CF900EBBF42 /* Images.xcassets */; };
@@ -39,6 +40,7 @@
 		0D1009BF1C9B039F00A54261 /* DBGLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBGLoginViewController.swift; sourceTree = "<group>"; };
 		0D56CA941C77F40D008BF765 /* MyStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStyle.swift; sourceTree = "<group>"; };
 		0D67773B1CA336C4009243DD /* LoginOrSignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginOrSignupViewController.swift; sourceTree = "<group>"; };
+		0D67773D1CA34FA6009243DD /* DBGWelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBGWelcomeViewController.swift; sourceTree = "<group>"; };
 		0D6F58891C7F4AB70067B98E /* EditArticleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditArticleViewController.swift; sourceTree = "<group>"; };
 		0D7C5E871CA3182400EBBF42 /* SwiftHEXColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftHEXColors.swift; sourceTree = "<group>"; };
 		0D7C5E891CA32CF900EBBF42 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				0D1009BD1C9B02B400A54261 /* DBGColors.swift */,
 				0D7C5E871CA3182400EBBF42 /* SwiftHEXColors.swift */,
 				0D67773B1CA336C4009243DD /* LoginOrSignupViewController.swift */,
+				0D67773D1CA34FA6009243DD /* DBGWelcomeViewController.swift */,
 			);
 			path = ParseStarterProject;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				0D1009BA1C9AFD7800A54261 /* DBGPostsCell.swift in Sources */,
 				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
 				CBD260A61C63A65E005BB9A1 /* DBGSignupViewController.swift in Sources */,
+				0D67773E1CA34FA6009243DD /* DBGWelcomeViewController.swift in Sources */,
 				CB89D7261C72233A004C6513 /* MARListOfArticlesViewController.swift in Sources */,
 				0D67773C1CA336C4009243DD /* LoginOrSignupViewController.swift in Sources */,
 				0D56CA951C77F40D008BF765 /* MyStyle.swift in Sources */,

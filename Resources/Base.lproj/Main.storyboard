@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8fl-Mr-ArX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GUO-oj-XRT">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -167,11 +167,17 @@
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="yhI-QW-aGG"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x6I-yM-THw">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="sXF-yf-JPB"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OAR-47-FU7">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -547,6 +553,116 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1k8-mY-hpm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="834" y="288"/>
+        </scene>
+        <!--Welcome View Controller-->
+        <scene sceneID="QJR-fb-IAj">
+            <objects>
+                <viewController storyboardIdentifier="Bienvenido" id="GUO-oj-XRT" customClass="DBGWelcomeViewController" customModule="iOSitesm2016" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7Qv-lk-GoS"/>
+                        <viewControllerLayoutGuide type="bottom" id="xhV-On-Lju"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xDw-Ig-r8Z">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¡Bienvenido!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KIS-Ux-qYu">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Qué deseas hacer?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XA5-P6-eB1">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aC5-AU-961">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Anunciar un cuarto">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="anunciarWasPressed:" destination="GUO-oj-XRT" eventType="touchUpInside" id="ZxD-x4-5ra"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUG-dR-40J">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Buscar un cuarto">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buscarWasPressed:" destination="GUO-oj-XRT" eventType="touchUpInside" id="LRG-uJ-UKn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aC5-AU-961" firstAttribute="top" secondItem="TUG-dR-40J" secondAttribute="bottom" constant="44" id="48u-rx-SLJ">
+                                <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="aC5-AU-961" firstAttribute="leading" secondItem="TUG-dR-40J" secondAttribute="leading" id="B2z-cU-cks"/>
+                            <constraint firstItem="TUG-dR-40J" firstAttribute="trailing" secondItem="XA5-P6-eB1" secondAttribute="trailing" id="Fbh-jX-6kI"/>
+                            <constraint firstItem="XA5-P6-eB1" firstAttribute="top" secondItem="KIS-Ux-qYu" secondAttribute="bottom" constant="81" id="Hup-20-C8G"/>
+                            <constraint firstItem="aC5-AU-961" firstAttribute="trailing" secondItem="TUG-dR-40J" secondAttribute="trailing" id="MFf-AJ-Q5G"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XA5-P6-eB1" secondAttribute="trailing" constant="102" id="TCB-1b-99a"/>
+                            <constraint firstItem="KIS-Ux-qYu" firstAttribute="top" secondItem="7Qv-lk-GoS" secondAttribute="bottom" constant="47" id="XZf-im-Xj1"/>
+                            <constraint firstItem="KIS-Ux-qYu" firstAttribute="centerX" secondItem="xDw-Ig-r8Z" secondAttribute="centerX" id="XfB-8P-ePm"/>
+                            <constraint firstItem="TUG-dR-40J" firstAttribute="leading" secondItem="XA5-P6-eB1" secondAttribute="leading" id="hJe-6x-Gmh"/>
+                            <constraint firstItem="XA5-P6-eB1" firstAttribute="leading" secondItem="xDw-Ig-r8Z" secondAttribute="leadingMargin" constant="102" id="qAx-wX-wFh"/>
+                            <constraint firstItem="TUG-dR-40J" firstAttribute="top" secondItem="XA5-P6-eB1" secondAttribute="bottom" constant="84" id="zet-dt-tLY"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="KIS-Ux-qYu"/>
+                                <exclude reference="XA5-P6-eB1"/>
+                                <exclude reference="aC5-AU-961"/>
+                                <exclude reference="TUG-dR-40J"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="XZf-im-Xj1"/>
+                                <exclude reference="XfB-8P-ePm"/>
+                                <exclude reference="Hup-20-C8G"/>
+                                <exclude reference="TCB-1b-99a"/>
+                                <exclude reference="qAx-wX-wFh"/>
+                                <exclude reference="Fbh-jX-6kI"/>
+                                <exclude reference="hJe-6x-Gmh"/>
+                                <exclude reference="zet-dt-tLY"/>
+                                <exclude reference="48u-rx-SLJ"/>
+                                <exclude reference="B2z-cU-cks"/>
+                                <exclude reference="MFf-AJ-Q5G"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="KIS-Ux-qYu"/>
+                                <include reference="XA5-P6-eB1"/>
+                                <include reference="aC5-AU-961"/>
+                                <include reference="TUG-dR-40J"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="XZf-im-Xj1"/>
+                                <include reference="XfB-8P-ePm"/>
+                                <include reference="Hup-20-C8G"/>
+                                <include reference="TCB-1b-99a"/>
+                                <include reference="qAx-wX-wFh"/>
+                                <include reference="Fbh-jX-6kI"/>
+                                <include reference="hJe-6x-Gmh"/>
+                                <include reference="zet-dt-tLY"/>
+                                <include reference="48u-rx-SLJ"/>
+                                <include reference="B2z-cU-cks"/>
+                                <include reference="MFf-AJ-Q5G"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="DBGAnunciar" destination="aC5-AU-961" id="lo9-xN-Ljf"/>
+                        <outlet property="DBGBuscar" destination="TUG-dR-40J" id="wNE-4Q-CVd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="17Z-Pk-c5Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="798" y="955.5"/>
         </scene>
     </scenes>
     <resources>

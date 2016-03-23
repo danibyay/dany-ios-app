@@ -15,17 +15,19 @@ class DBGSignupViewController: UIViewController {
     @IBOutlet weak var marEmail: UITextField!
     @IBOutlet weak var marPassword: UITextField!
     @IBOutlet weak var marSignUp: UIButton!
-    //marEmail
-    //marPassword
-    //marSignUp
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpView()
+    }
+    
+    func setUpView(){
+        self.view.backgroundColor = UIColor.danyBaseColor()
+        marSignUp.layer.backgroundColor = UIColor.danyContrastColor().CGColor
+        marEmail.layer.borderWidth = 2
+        marPassword.layer.borderWidth = 2
         marEmail.layer.borderColor = UIColor.danyContrastColor().CGColor
         marPassword.layer.borderColor = UIColor.danyContrastColor().CGColor
-        marSignUp.layer.backgroundColor = UIColor.danyContrastColor().CGColor
-        self.view.backgroundColor = UIColor.danyBaseColor()
-        
         marEmail.text = "someone@gmail.com"
         marPassword.text = "Password123"
     }
@@ -34,18 +36,17 @@ class DBGSignupViewController: UIViewController {
         self.view.endEditing(true)
     }
     
-//    @IBAction func loginWasPressed(sender: AnyObject) {
-//        if marEmail.text != "" && marPassword.text != "" {
-//            PFUser.logInWithUsernameInBackground(marEmail.text!, password: marPassword.text!, block: { (user: PFUser?, error: NSError?) -> Void in
-//                if error == nil {
-//                    print("user logged in successfully")
-//                    self.presentController("NavigationController")
-//                } else {
-//                    print(error)
-//                }
-//            })
-//        }
-//    }
+    
+    func loginAfterSignup(){
+        PFUser.logInWithUsernameInBackground(marEmail.text!, password: marPassword.text!, block: { (user: PFUser?, error: NSError?) -> Void in
+            if error == nil {
+                print("user logged in successfully")
+                self.presentController("Bienvenido")
+            } else {
+                print(error)
+            }
+        })
+    }
     
     @IBAction func SignUpWasPressed(sender: AnyObject) {
         if marEmail.text != "" && marPassword.text != "" {
@@ -61,6 +62,10 @@ class DBGSignupViewController: UIViewController {
                     print(error)
                 }
             })
+            
+            loginAfterSignup()
+            
+            
         }
     }
     
@@ -71,13 +76,13 @@ class DBGSignupViewController: UIViewController {
 
 }
 
-//extension DBGSignupViewController: UITextFieldDelegate {
-//    func textFieldShouldReturn(textField: UITextField) -> Bool {
-//        if textField == marEmail {
-//            marPassword.becomeFirstResponder()
-//        } else {
-//            loginWasPressed(self)
-//        }
-//        return true
-//    }
-//}
+extension DBGSignupViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        if textField == marEmail {
+            marPassword.becomeFirstResponder()
+        } else {
+            SignUpWasPressed(self)
+        }
+        return true
+    }
+}

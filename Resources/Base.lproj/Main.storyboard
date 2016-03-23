@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8fl-Mr-ArX">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -7,28 +7,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="QVR-1q-hD5">
-            <objects>
-                <viewController id="rzk-gW-Nda" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ygO-2c-hLJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="VMl-rD-Vdo"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="U6o-Vw-IAk">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="c9e-Nt-gde" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="54" y="-362.25"/>
-        </scene>
-        <!--View Controller-->
+        <!--Login Or Signup View Controller-->
         <scene sceneID="L4x-Fl-Gen">
             <objects>
-                <viewController storyboardIdentifier="login/signup" id="8fl-Mr-ArX" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginorsignup" id="8fl-Mr-ArX" customClass="LoginOrSignupViewController" customModule="iOSitesm2016" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AV0-ct-3HJ"/>
                         <viewControllerLayoutGuide type="bottom" id="LHw-b7-2RU"/>
@@ -66,6 +48,9 @@
                                 <state key="normal" title="Crear cuenta">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="signupWasPressed:" destination="8fl-Mr-ArX" eventType="touchUpInside" id="qLe-Jq-utW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhR-AL-zPv">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -75,7 +60,10 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWe-Dy-HaH">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Ahora no"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Ahora no">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -151,15 +139,22 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="dbgLogin" destination="zhR-AL-zPv" id="KOF-LT-RnO"/>
+                        <outlet property="dbgNotnow" destination="pWe-Dy-HaH" id="Xgb-hm-hc2"/>
+                        <outlet property="dbgSignup" destination="T70-Ch-2oz" id="UE0-Rj-hjS"/>
+                        <outlet property="loginWasPressed" destination="zhR-AL-zPv" id="0Pf-ND-GjY"/>
+                        <outlet property="notnowWasPressed" destination="pWe-Dy-HaH" id="ZRP-sI-qpC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y64-ki-err" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-46.5" y="954"/>
+            <point key="canvasLocation" x="-527" y="998"/>
         </scene>
-        <!--Sign Up View Controller-->
+        <!--Signup View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="DBGSignUpViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="DBGSignupViewController" customModule="iOSitesm2016" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -172,17 +167,11 @@
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
-                                <connections>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="7fi-iz-ucp"/>
-                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x6I-yM-THw">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES"/>
-                                <connections>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="drG-jy-eeD"/>
-                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OAR-47-FU7">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -206,7 +195,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <action selector="signupWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I4O-Cs-glU"/>
+                                    <action selector="SignUpWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6k2-0f-BXZ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crear cuenta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hu6-8Q-thq">
@@ -282,9 +271,9 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="marEmail" destination="UeD-Ee-IfL" id="U3A-8Q-6Dh"/>
-                        <outlet property="marPassword" destination="x6I-yM-THw" id="mAz-Vm-zNb"/>
-                        <outlet property="marSignUp" destination="OAR-47-FU7" id="zKz-xd-0SB"/>
+                        <outlet property="marEmail" destination="UeD-Ee-IfL" id="JyX-9h-49C"/>
+                        <outlet property="marPassword" destination="x6I-yM-THw" id="5sH-pO-ska"/>
+                        <outlet property="marSignUp" destination="OAR-47-FU7" id="LYL-BP-bxc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

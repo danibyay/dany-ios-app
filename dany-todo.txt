@@ -1,1 +1,6 @@
 * make a custom class for the buttons, so that I dont modify the colors everytime
+
+* make the presentViewController a global function for the project
+
+
+*** Put navigation bars so "back" is always available (going back action)

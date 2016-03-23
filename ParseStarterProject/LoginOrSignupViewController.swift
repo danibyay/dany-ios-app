@@ -25,9 +25,22 @@ class LoginOrSignupViewController: UIViewController {
         self.view.backgroundColor = UIColor.danyBaseColor()
     }
     
-    @IBOutlet weak var notnowWasPressed: UIButton!
-    @IBOutlet weak var loginWasPressed: UIButton!
+    func presentController(storyboardId: String) {
+        let controller = self.storyboard?.instantiateViewControllerWithIdentifier(storyboardId)
+        self.presentViewController(controller!, animated: true, completion: nil)
+    }
+    
+   
     @IBAction func signupWasPressed(sender: AnyObject) {
+        presentController("SignUp")
+    }
+    
+    @IBAction func loginWasPressed(sender: AnyObject) {
+        presentController("Login")
+    }
+    
+    @IBAction func notnowWasPressed(sender: AnyObject) {
+        presentController("Bienvenido")
     }
 
 }

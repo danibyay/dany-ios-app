@@ -1,0 +1,49 @@
+PODS:
+  - GradientCircularProgress (3.0.0)
+  - MRProgress (0.8.3):
+    - MRProgress/ActivityIndicator (= 0.8.3)
+    - MRProgress/Blur (= 0.8.3)
+    - MRProgress/Circular (= 0.8.3)
+    - MRProgress/Icons (= 0.8.3)
+    - MRProgress/NavigationBarProgress (= 0.8.3)
+    - MRProgress/Overlay (= 0.8.3)
+  - MRProgress/ActivityIndicator (0.8.3):
+    - MRProgress/Stopable
+  - MRProgress/Blur (0.8.3):
+    - MRProgress/Helper
+  - MRProgress/Circular (0.8.3):
+    - MRProgress/Helper
+    - MRProgress/ProgressBaseClass
+    - MRProgress/Stopable
+  - MRProgress/Helper (0.8.3)
+  - MRProgress/Icons (0.8.3)
+  - MRProgress/NavigationBarProgress (0.8.3):
+    - MRProgress/ProgressBaseClass
+  - MRProgress/Overlay (0.8.3):
+    - MRProgress/ActivityIndicator
+    - MRProgress/Blur
+    - MRProgress/Circular
+    - MRProgress/Helper
+    - MRProgress/Icons
+  - MRProgress/ProgressBaseClass (0.8.3)
+  - MRProgress/Stopable (0.8.3):
+    - MRProgress/Helper
+
+DEPENDENCIES:
+  - GradientCircularProgress (from `https://github.com/keygx/GradientCircularProgress`)
+  - MRProgress
+
+EXTERNAL SOURCES:
+  GradientCircularProgress:
+    :git: https://github.com/keygx/GradientCircularProgress
+
+CHECKOUT OPTIONS:
+  GradientCircularProgress:
+    :commit: ca6beaa31856f47828c625c20416e405b9734f65
+    :git: https://github.com/keygx/GradientCircularProgress
+
+SPEC CHECKSUMS:
+  GradientCircularProgress: 213823189ae647f9ae7718df5f03ff7ceb091cbb
+  MRProgress: 16de7cc9f347e8846797a770db102a323fe7ef09
+
+COCOAPODS: 0.39.0

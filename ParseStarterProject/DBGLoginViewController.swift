@@ -20,6 +20,10 @@ class DBGLoginViewController: UIViewController {
         setUpView()
     }
     
+    @IBAction func forgotPasswordWasPressed(sender: AnyObject) {
+        presentController("ForgotPassword")
+    }
+    
     func setUpView(){
         self.view.backgroundColor = UIColor.danyBaseColor()
         dbgEmail.layer.borderWidth = 2

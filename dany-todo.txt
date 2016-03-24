@@ -2,5 +2,8 @@
 
 * make the presentViewController a global function for the project
 
+**hacer scroll views o algo, en forgot password se cubre el boton con el teclado
 
 *** Put navigation bars so "back" is always available (going back action)
+
+*fix forgot screen and other screens for iphone 5 and smaller I guess

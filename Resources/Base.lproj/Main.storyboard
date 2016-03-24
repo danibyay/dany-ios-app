@@ -79,7 +79,7 @@
                                 <variation key="heightClass=regular-widthClass=compact" constant="35"/>
                             </constraint>
                             <constraint firstItem="T70-Ch-2oz" firstAttribute="leading" secondItem="SXA-CZ-UHj" secondAttribute="leadingMargin" constant="157" id="76e-KV-bND">
-                                <variation key="heightClass=regular-widthClass=compact" constant="100"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="30"/>
                             </constraint>
                             <constraint firstItem="zhR-AL-zPv" firstAttribute="leading" secondItem="T70-Ch-2oz" secondAttribute="leading" id="7L8-Xp-Eol"/>
                             <constraint firstItem="pWe-Dy-HaH" firstAttribute="top" secondItem="zhR-AL-zPv" secondAttribute="bottom" constant="33" id="BZV-Jo-odA">
@@ -88,7 +88,7 @@
                             <constraint firstItem="pWe-Dy-HaH" firstAttribute="leading" secondItem="zhR-AL-zPv" secondAttribute="leading" id="BdK-26-cbv"/>
                             <constraint firstItem="gwx-AX-kg9" firstAttribute="centerX" secondItem="SXA-CZ-UHj" secondAttribute="centerX" id="LHP-HN-u1K"/>
                             <constraint firstAttribute="trailingMargin" secondItem="T70-Ch-2oz" secondAttribute="trailing" constant="157" id="WHo-d5-njd">
-                                <variation key="heightClass=regular-widthClass=compact" constant="100"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="30"/>
                             </constraint>
                             <constraint firstItem="pWe-Dy-HaH" firstAttribute="trailing" secondItem="zhR-AL-zPv" secondAttribute="trailing" id="Xgd-Is-Ecn"/>
                             <constraint firstItem="2y7-RB-6CO" firstAttribute="top" secondItem="AV0-ct-3HJ" secondAttribute="bottom" constant="34" id="fcX-L0-gD3"/>
@@ -334,7 +334,7 @@
                                         <variation key="heightClass=regular-widthClass=compact" constant="45"/>
                                     </constraint>
                                 </constraints>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <state key="normal" title="Crear cuenta">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -518,7 +518,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Correo electrónico" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mYl-tu-gLb">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="correo electrónico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mYl-tu-gLb">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" keyboardAppearance="alert" returnKeyType="go"/>
@@ -616,7 +616,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rak-FU-CWk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="231" y="1075.5"/>
+            <point key="canvasLocation" x="166.5" y="1062.75"/>
         </scene>
         <!--Edit Article-->
         <scene sceneID="RxU-6B-TWm">
@@ -859,7 +859,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Qué deseas hacer?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XA5-P6-eB1">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Qué deseas hacer?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XA5-P6-eB1">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -895,13 +895,17 @@
                                 <variation key="heightClass=regular-widthClass=compact" constant="80"/>
                             </constraint>
                             <constraint firstItem="aC5-AU-961" firstAttribute="trailing" secondItem="TUG-dR-40J" secondAttribute="trailing" id="MFf-AJ-Q5G"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="XA5-P6-eB1" secondAttribute="trailing" constant="102" id="TCB-1b-99a"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XA5-P6-eB1" secondAttribute="trailing" constant="102" id="TCB-1b-99a">
+                                <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                            </constraint>
                             <constraint firstItem="KIS-Ux-qYu" firstAttribute="top" secondItem="7Qv-lk-GoS" secondAttribute="bottom" constant="47" id="XZf-im-Xj1">
                                 <variation key="heightClass=regular-widthClass=compact" constant="100"/>
                             </constraint>
                             <constraint firstItem="KIS-Ux-qYu" firstAttribute="centerX" secondItem="xDw-Ig-r8Z" secondAttribute="centerX" id="XfB-8P-ePm"/>
                             <constraint firstItem="TUG-dR-40J" firstAttribute="leading" secondItem="XA5-P6-eB1" secondAttribute="leading" id="hJe-6x-Gmh"/>
-                            <constraint firstItem="XA5-P6-eB1" firstAttribute="leading" secondItem="xDw-Ig-r8Z" secondAttribute="leadingMargin" constant="102" id="qAx-wX-wFh"/>
+                            <constraint firstItem="XA5-P6-eB1" firstAttribute="leading" secondItem="xDw-Ig-r8Z" secondAttribute="leadingMargin" constant="102" id="qAx-wX-wFh">
+                                <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                            </constraint>
                             <constraint firstItem="TUG-dR-40J" firstAttribute="top" secondItem="XA5-P6-eB1" secondAttribute="bottom" constant="84" id="zet-dt-tLY">
                                 <variation key="heightClass=regular-widthClass=compact" constant="85"/>
                             </constraint>

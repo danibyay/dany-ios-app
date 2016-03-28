@@ -10,7 +10,8 @@ import UIKit
 
 class DBGWelcomeViewController: UIViewController {
 
-    @IBOutlet weak var DBGBuscar: UIButton!
+    
+    @IBOutlet weak var DBGBuscar: DBGSimplebutton!
     @IBOutlet weak var DBGAnunciar: UIButton!
     
     
@@ -21,7 +22,6 @@ class DBGWelcomeViewController: UIViewController {
     
     func setColors(){
         self.view.backgroundColor = UIColor.danyBaseColor()
-        DBGBuscar.layer.backgroundColor = UIColor.danyContrastColor().CGColor
         DBGAnunciar.layer.backgroundColor = UIColor.danySecondContrastColor().CGColor
     }
 

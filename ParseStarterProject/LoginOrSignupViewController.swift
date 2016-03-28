@@ -10,9 +10,10 @@ import UIKit
 
 class LoginOrSignupViewController: UIViewController {
 
-    @IBOutlet weak var dbgSignup: UIButton!
-    @IBOutlet weak var dbgLogin: UIButton!
+    
     @IBOutlet weak var dbgNotnow: UIButton!
+    @IBOutlet weak var dbgSignup: DBGSimplebutton!
+    @IBOutlet weak var dbgLogin: DBGSimplebutton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,8 +21,6 @@ class LoginOrSignupViewController: UIViewController {
     }
 
     func colorView(){
-        dbgSignup.layer.backgroundColor = UIColor.danyContrastColor().CGColor
-        dbgLogin.layer.backgroundColor = UIColor.danyContrastColor().CGColor
         self.view.backgroundColor = UIColor.danyBaseColor()
     }
     

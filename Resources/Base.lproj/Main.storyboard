@@ -16,6 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="LHw-b7-2RU"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="SXA-CZ-UHj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="2y7-RB-6CO">
@@ -43,7 +44,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T70-Ch-2oz">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T70-Ch-2oz" customClass="DBGSimplebutton" customModule="iOSitesm2016" customModuleProvider="target">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Crear cuenta">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -52,7 +53,7 @@
                                     <action selector="signupWasPressed:" destination="8fl-Mr-ArX" eventType="touchUpInside" id="qLe-Jq-utW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhR-AL-zPv">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhR-AL-zPv" customClass="DBGSimplebutton" customModule="iOSitesm2016" customModuleProvider="target">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Acceder">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -105,19 +106,19 @@
                                 <exclude reference="pWe-Dy-HaH"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="fcX-L0-gD3"/>
-                                <exclude reference="v2K-2W-hJh"/>
-                                <exclude reference="LHP-HN-u1K"/>
-                                <exclude reference="lmU-AG-1Bf"/>
                                 <exclude reference="76e-KV-bND"/>
                                 <exclude reference="WHo-d5-njd"/>
                                 <exclude reference="zFh-OB-o0n"/>
-                                <exclude reference="1B9-tJ-inR"/>
-                                <exclude reference="2iL-p2-o5d"/>
-                                <exclude reference="7L8-Xp-Eol"/>
                                 <exclude reference="BZV-Jo-odA"/>
                                 <exclude reference="BdK-26-cbv"/>
                                 <exclude reference="Xgd-Is-Ecn"/>
+                                <exclude reference="1B9-tJ-inR"/>
+                                <exclude reference="2iL-p2-o5d"/>
+                                <exclude reference="7L8-Xp-Eol"/>
+                                <exclude reference="LHP-HN-u1K"/>
+                                <exclude reference="lmU-AG-1Bf"/>
+                                <exclude reference="fcX-L0-gD3"/>
+                                <exclude reference="v2K-2W-hJh"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -129,26 +130,26 @@
                                 <include reference="pWe-Dy-HaH"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="fcX-L0-gD3"/>
-                                <include reference="v2K-2W-hJh"/>
-                                <include reference="LHP-HN-u1K"/>
-                                <include reference="lmU-AG-1Bf"/>
                                 <include reference="76e-KV-bND"/>
                                 <include reference="WHo-d5-njd"/>
                                 <include reference="zFh-OB-o0n"/>
-                                <include reference="1B9-tJ-inR"/>
-                                <include reference="2iL-p2-o5d"/>
-                                <include reference="7L8-Xp-Eol"/>
                                 <include reference="BZV-Jo-odA"/>
                                 <include reference="BdK-26-cbv"/>
                                 <include reference="Xgd-Is-Ecn"/>
+                                <include reference="1B9-tJ-inR"/>
+                                <include reference="2iL-p2-o5d"/>
+                                <include reference="7L8-Xp-Eol"/>
+                                <include reference="LHP-HN-u1K"/>
+                                <include reference="lmU-AG-1Bf"/>
+                                <include reference="fcX-L0-gD3"/>
+                                <include reference="v2K-2W-hJh"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="dbgLogin" destination="zhR-AL-zPv" id="KOF-LT-RnO"/>
+                        <outlet property="dbgLogin" destination="zhR-AL-zPv" id="7ub-f9-Miw"/>
                         <outlet property="dbgNotnow" destination="pWe-Dy-HaH" id="Xgb-hm-hc2"/>
-                        <outlet property="dbgSignup" destination="T70-Ch-2oz" id="UE0-Rj-hjS"/>
+                        <outlet property="dbgSignup" destination="T70-Ch-2oz" id="zJB-hS-Z5a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y64-ki-err" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -164,6 +165,7 @@
                         <viewControllerLayoutGuide type="bottom" id="eVv-jM-Ve4"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="OuH-8j-bP3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acceder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Je3-x9-ufa">
@@ -172,7 +174,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cm5-dD-4Qv">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cm5-dD-4Qv" customClass="DBGSimplebutton" customModule="iOSitesm2016" customModuleProvider="target">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Acceder">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -181,7 +183,7 @@
                                     <action selector="loginWasPressed:" destination="Rna-9a-Bkn" eventType="touchUpInside" id="6bb-wu-2mV"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Df3-Td-cDY">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Df3-Td-cDY" customClass="DBGSimpleTextField" customModule="iOSitesm2016" customModuleProvider="target">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="go" secureTextEntry="YES"/>
@@ -189,7 +191,7 @@
                                     <outlet property="delegate" destination="Rna-9a-Bkn" id="NVt-yq-pqC"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k9P-zm-5rn">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k9P-zm-5rn" customClass="DBGSimpleTextField" customModule="iOSitesm2016" customModuleProvider="target">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" keyboardAppearance="alert" returnKeyType="next"/>
@@ -247,20 +249,20 @@
                                 <exclude reference="YIQ-iu-JNE"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="JHQ-nO-RC3"/>
-                                <exclude reference="ftP-za-g6F"/>
-                                <exclude reference="C0w-tu-1Za"/>
-                                <exclude reference="IJr-Ab-Pyg"/>
-                                <exclude reference="zQf-7Y-loL"/>
                                 <exclude reference="Ax7-gh-7o5"/>
                                 <exclude reference="EJo-Rs-jmd"/>
                                 <exclude reference="j05-hw-Tx2"/>
-                                <exclude reference="H3K-ew-PU6"/>
-                                <exclude reference="arn-Zy-fMb"/>
-                                <exclude reference="z5b-xh-Qrl"/>
+                                <exclude reference="C0w-tu-1Za"/>
+                                <exclude reference="IJr-Ab-Pyg"/>
+                                <exclude reference="zQf-7Y-loL"/>
                                 <exclude reference="D7o-Lt-gVe"/>
                                 <exclude reference="NtO-wv-DiW"/>
                                 <exclude reference="fy5-9q-MFk"/>
+                                <exclude reference="H3K-ew-PU6"/>
+                                <exclude reference="arn-Zy-fMb"/>
+                                <exclude reference="z5b-xh-Qrl"/>
+                                <exclude reference="JHQ-nO-RC3"/>
+                                <exclude reference="ftP-za-g6F"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -272,27 +274,27 @@
                                 <include reference="YIQ-iu-JNE"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="JHQ-nO-RC3"/>
-                                <include reference="ftP-za-g6F"/>
-                                <include reference="C0w-tu-1Za"/>
-                                <include reference="IJr-Ab-Pyg"/>
-                                <include reference="zQf-7Y-loL"/>
                                 <include reference="Ax7-gh-7o5"/>
                                 <include reference="EJo-Rs-jmd"/>
                                 <include reference="j05-hw-Tx2"/>
-                                <include reference="H3K-ew-PU6"/>
-                                <include reference="arn-Zy-fMb"/>
-                                <include reference="z5b-xh-Qrl"/>
+                                <include reference="C0w-tu-1Za"/>
+                                <include reference="IJr-Ab-Pyg"/>
+                                <include reference="zQf-7Y-loL"/>
                                 <include reference="D7o-Lt-gVe"/>
                                 <include reference="NtO-wv-DiW"/>
                                 <include reference="fy5-9q-MFk"/>
+                                <include reference="H3K-ew-PU6"/>
+                                <include reference="arn-Zy-fMb"/>
+                                <include reference="z5b-xh-Qrl"/>
+                                <include reference="JHQ-nO-RC3"/>
+                                <include reference="ftP-za-g6F"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="dbgEmail" destination="k9P-zm-5rn" id="CEB-z9-gHF"/>
-                        <outlet property="dbgLogin" destination="cm5-dD-4Qv" id="qW2-FS-VTY"/>
-                        <outlet property="dbgPassword" destination="Df3-Td-cDY" id="vkJ-dD-E2t"/>
+                        <outlet property="dbgEmail" destination="k9P-zm-5rn" id="XAH-W5-3Ni"/>
+                        <outlet property="dbgLogin" destination="cm5-dD-4Qv" id="hq2-lz-5L5"/>
+                        <outlet property="dbgPassword" destination="Df3-Td-cDY" id="rZs-e3-JsZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PnV-ht-tdu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -311,7 +313,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UeD-Ee-IfL">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UeD-Ee-IfL" customClass="DBGSimpleTextField" customModule="iOSitesm2016" customModuleProvider="target">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
@@ -319,7 +321,7 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="yhI-QW-aGG"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x6I-yM-THw">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x6I-yM-THw" customClass="DBGSimpleTextField" customModule="iOSitesm2016" customModuleProvider="target">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES"/>
@@ -327,7 +329,7 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="sXF-yf-JPB"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OAR-47-FU7">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OAR-47-FU7" customClass="DBGSimplebutton" customModule="iOSitesm2016" customModuleProvider="target">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="edD-dO-L45">
@@ -391,8 +393,6 @@
                                 <exclude reference="hu6-8Q-thq"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="gFb-D5-6FI"/>
-                                <exclude reference="y2K-Zt-n8h"/>
                                 <exclude reference="GOI-Lk-BRf"/>
                                 <exclude reference="GpY-YZ-Ikc"/>
                                 <exclude reference="ySu-Id-Rio"/>
@@ -402,6 +402,8 @@
                                 <exclude reference="50Z-Mt-Ab8"/>
                                 <exclude reference="95O-ui-Pe9"/>
                                 <exclude reference="Ya8-M0-JQp"/>
+                                <exclude reference="gFb-D5-6FI"/>
+                                <exclude reference="y2K-Zt-n8h"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -412,8 +414,6 @@
                                 <include reference="hu6-8Q-thq"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="gFb-D5-6FI"/>
-                                <include reference="y2K-Zt-n8h"/>
                                 <include reference="GOI-Lk-BRf"/>
                                 <include reference="GpY-YZ-Ikc"/>
                                 <include reference="ySu-Id-Rio"/>
@@ -423,13 +423,15 @@
                                 <include reference="50Z-Mt-Ab8"/>
                                 <include reference="95O-ui-Pe9"/>
                                 <include reference="Ya8-M0-JQp"/>
+                                <include reference="gFb-D5-6FI"/>
+                                <include reference="y2K-Zt-n8h"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="marEmail" destination="UeD-Ee-IfL" id="JyX-9h-49C"/>
-                        <outlet property="marPassword" destination="x6I-yM-THw" id="5sH-pO-ska"/>
-                        <outlet property="marSignUp" destination="OAR-47-FU7" id="LYL-BP-bxc"/>
+                        <outlet property="marEmail" destination="UeD-Ee-IfL" id="kAD-vf-RH7"/>
+                        <outlet property="marPassword" destination="x6I-yM-THw" id="kT1-Mc-cIM"/>
+                        <outlet property="marSignUp" destination="OAR-47-FU7" id="fpR-c6-V7A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -489,6 +491,7 @@
                         <viewControllerLayoutGuide type="bottom" id="nfv-vf-FTx"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="SuH-ha-Jw9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reestablecer contraseña" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPm-66-WTl">
@@ -518,7 +521,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="correo electrónico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mYl-tu-gLb">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="correo electrónico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mYl-tu-gLb" customClass="DBGSimpleTextField" customModule="iOSitesm2016" customModuleProvider="target">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" keyboardAppearance="alert" returnKeyType="go"/>
@@ -526,7 +529,7 @@
                                     <outlet property="delegate" destination="xDN-vk-2LE" id="Whn-h7-63e"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Eo-4N-Bel">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Eo-4N-Bel" customClass="DBGSimplebutton" customModule="iOSitesm2016" customModuleProvider="target">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Reestablecer contraseña">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -574,17 +577,17 @@
                                 <exclude reference="9Eo-4N-Bel"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="TAm-AL-kCJ"/>
-                                <exclude reference="p7Q-lV-aqh"/>
-                                <exclude reference="EBA-wU-0eb"/>
-                                <exclude reference="FkY-qP-qNh"/>
-                                <exclude reference="Mdi-Jg-5JV"/>
                                 <exclude reference="DQN-pW-Hxw"/>
                                 <exclude reference="J1B-e2-khc"/>
                                 <exclude reference="qDI-cV-Euc"/>
                                 <exclude reference="2Bs-k0-8to"/>
                                 <exclude reference="uR8-Cf-6M9"/>
                                 <exclude reference="xIv-m8-6am"/>
+                                <exclude reference="EBA-wU-0eb"/>
+                                <exclude reference="FkY-qP-qNh"/>
+                                <exclude reference="Mdi-Jg-5JV"/>
+                                <exclude reference="TAm-AL-kCJ"/>
+                                <exclude reference="p7Q-lV-aqh"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -595,23 +598,23 @@
                                 <include reference="9Eo-4N-Bel"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="TAm-AL-kCJ"/>
-                                <include reference="p7Q-lV-aqh"/>
-                                <include reference="EBA-wU-0eb"/>
-                                <include reference="FkY-qP-qNh"/>
-                                <include reference="Mdi-Jg-5JV"/>
                                 <include reference="DQN-pW-Hxw"/>
                                 <include reference="J1B-e2-khc"/>
                                 <include reference="qDI-cV-Euc"/>
                                 <include reference="2Bs-k0-8to"/>
                                 <include reference="uR8-Cf-6M9"/>
                                 <include reference="xIv-m8-6am"/>
+                                <include reference="EBA-wU-0eb"/>
+                                <include reference="FkY-qP-qNh"/>
+                                <include reference="Mdi-Jg-5JV"/>
+                                <include reference="TAm-AL-kCJ"/>
+                                <include reference="p7Q-lV-aqh"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="dbgEmail" destination="mYl-tu-gLb" id="Sf6-yu-rYZ"/>
-                        <outlet property="dbgForgotPassword" destination="9Eo-4N-Bel" id="QqZ-Bg-fHe"/>
+                        <outlet property="dbgEmail" destination="mYl-tu-gLb" id="hzE-GJ-0Yf"/>
+                        <outlet property="dbgForgotPassword" destination="9Eo-4N-Bel" id="a5A-oC-LFX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rak-FU-CWk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -851,6 +854,7 @@
                         <viewControllerLayoutGuide type="bottom" id="xhV-On-Lju"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xDw-Ig-r8Z">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¡Bienvenido!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KIS-Ux-qYu">
@@ -874,7 +878,7 @@
                                     <action selector="anunciarWasPressed:" destination="GUO-oj-XRT" eventType="touchUpInside" id="ZxD-x4-5ra"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUG-dR-40J">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUG-dR-40J" customClass="DBGSimplebutton" customModule="iOSitesm2016" customModuleProvider="target">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Buscar un cuarto">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -918,17 +922,17 @@
                                 <exclude reference="TUG-dR-40J"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="XZf-im-Xj1"/>
-                                <exclude reference="XfB-8P-ePm"/>
-                                <exclude reference="Hup-20-C8G"/>
-                                <exclude reference="TCB-1b-99a"/>
-                                <exclude reference="qAx-wX-wFh"/>
                                 <exclude reference="Fbh-jX-6kI"/>
                                 <exclude reference="hJe-6x-Gmh"/>
                                 <exclude reference="zet-dt-tLY"/>
                                 <exclude reference="48u-rx-SLJ"/>
                                 <exclude reference="B2z-cU-cks"/>
                                 <exclude reference="MFf-AJ-Q5G"/>
+                                <exclude reference="XZf-im-Xj1"/>
+                                <exclude reference="XfB-8P-ePm"/>
+                                <exclude reference="Hup-20-C8G"/>
+                                <exclude reference="TCB-1b-99a"/>
+                                <exclude reference="qAx-wX-wFh"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -939,23 +943,23 @@
                                 <include reference="TUG-dR-40J"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="XZf-im-Xj1"/>
-                                <include reference="XfB-8P-ePm"/>
-                                <include reference="Hup-20-C8G"/>
-                                <include reference="TCB-1b-99a"/>
-                                <include reference="qAx-wX-wFh"/>
                                 <include reference="Fbh-jX-6kI"/>
                                 <include reference="hJe-6x-Gmh"/>
                                 <include reference="zet-dt-tLY"/>
                                 <include reference="48u-rx-SLJ"/>
                                 <include reference="B2z-cU-cks"/>
                                 <include reference="MFf-AJ-Q5G"/>
+                                <include reference="XZf-im-Xj1"/>
+                                <include reference="XfB-8P-ePm"/>
+                                <include reference="Hup-20-C8G"/>
+                                <include reference="TCB-1b-99a"/>
+                                <include reference="qAx-wX-wFh"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="DBGAnunciar" destination="aC5-AU-961" id="lo9-xN-Ljf"/>
-                        <outlet property="DBGBuscar" destination="TUG-dR-40J" id="wNE-4Q-CVd"/>
+                        <outlet property="DBGBuscar" destination="TUG-dR-40J" id="MJ0-Yf-5fh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="17Z-Pk-c5Q" userLabel="First Responder" sceneMemberID="firstResponder"/>

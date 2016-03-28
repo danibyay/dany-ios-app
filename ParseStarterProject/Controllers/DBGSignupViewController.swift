@@ -11,10 +11,11 @@ import Parse
 
 class DBGSignupViewController: UIViewController {
 
-   
-    @IBOutlet weak var marEmail: UITextField!
-    @IBOutlet weak var marPassword: UITextField!
-    @IBOutlet weak var marSignUp: UIButton!
+    
+    @IBOutlet weak var marEmail: DBGSimpleTextField!
+    @IBOutlet weak var marPassword: DBGSimpleTextField!
+    @IBOutlet weak var marSignUp: DBGSimplebutton!
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,11 +24,6 @@ class DBGSignupViewController: UIViewController {
     
     func setUpView(){
         self.view.backgroundColor = UIColor.danyBaseColor()
-        marSignUp.layer.backgroundColor = UIColor.danyContrastColor().CGColor
-        marEmail.layer.borderWidth = 2
-        marPassword.layer.borderWidth = 2
-        marEmail.layer.borderColor = UIColor.danyContrastColor().CGColor
-        marPassword.layer.borderColor = UIColor.danyContrastColor().CGColor
         marEmail.text = "someone@gmail.com"
         marPassword.text = "Password123"
     }

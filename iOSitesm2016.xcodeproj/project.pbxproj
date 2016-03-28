@@ -17,6 +17,8 @@
 		0D6F588A1C7F4AB70067B98E /* EditArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6F58891C7F4AB70067B98E /* EditArticleViewController.swift */; };
 		0D7C5E881CA3182400EBBF42 /* SwiftHEXColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7C5E871CA3182400EBBF42 /* SwiftHEXColors.swift */; };
 		0D7C5E8A1CA32CF900EBBF42 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D7C5E891CA32CF900EBBF42 /* Images.xcassets */; };
+		0D98C9971CA98C4B00F6F9FA /* DBGSimpleTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D98C9961CA98C4B00F6F9FA /* DBGSimpleTextField.swift */; };
+		0DA507761CA4F99700D4BA66 /* DBGSimpleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA507751CA4F99700D4BA66 /* DBGSimpleButton.swift */; };
 		38CD79ED52D5A97EEF84AFDE /* Pods_iOSitesm2016.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B708A39140DEC1575FF32448 /* Pods_iOSitesm2016.framework */; };
 		814C3ACA1B69877600E307BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 814C3AC61B69877600E307BB /* Main.storyboard */; };
 		81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA814A1A49DA1800E65899 /* AppDelegate.swift */; };
@@ -46,6 +48,8 @@
 		0D6F58891C7F4AB70067B98E /* EditArticleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditArticleViewController.swift; sourceTree = "<group>"; };
 		0D7C5E871CA3182400EBBF42 /* SwiftHEXColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftHEXColors.swift; sourceTree = "<group>"; };
 		0D7C5E891CA32CF900EBBF42 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0D98C9961CA98C4B00F6F9FA /* DBGSimpleTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBGSimpleTextField.swift; sourceTree = "<group>"; };
+		0DA507751CA4F99700D4BA66 /* DBGSimpleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBGSimpleButton.swift; sourceTree = "<group>"; };
 		5E0DF7FA74C08592FA67A50A /* Pods-iOSitesm2016.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSitesm2016.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSitesm2016/Pods-iOSitesm2016.release.xcconfig"; sourceTree = "<group>"; };
 		814C3AC71B69877600E307BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		814C3AC91B69877600E307BB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -134,9 +138,6 @@
 				0D56CA941C77F40D008BF765 /* MyStyle.swift */,
 				0D1009BD1C9B02B400A54261 /* DBGColors.swift */,
 				0D7C5E871CA3182400EBBF42 /* SwiftHEXColors.swift */,
-				0D67773B1CA336C4009243DD /* LoginOrSignupViewController.swift */,
-				0D67773D1CA34FA6009243DD /* DBGWelcomeViewController.swift */,
-				0D67773F1CA35EED009243DD /* DBGForgotPasswordViewController.swift */,
 			);
 			path = ParseStarterProject;
 			sourceTree = "<group>";
@@ -171,6 +172,8 @@
 				CB89D7281C7224B8004C6513 /* MARArticlesCell.swift */,
 				CB89D72A1C7224DF004C6513 /* MARArticlesCell.xib */,
 				0D1009B91C9AFD7800A54261 /* DBGPostsCell.swift */,
+				0D98C9961CA98C4B00F6F9FA /* DBGSimpleTextField.swift */,
+				0DA507751CA4F99700D4BA66 /* DBGSimpleButton.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -183,6 +186,9 @@
 				CB1140681C68E35F0096DDFA /* CreateArticleController.swift */,
 				CB89D7251C72233A004C6513 /* MARListOfArticlesViewController.swift */,
 				0D6F58891C7F4AB70067B98E /* EditArticleViewController.swift */,
+				0D67773B1CA336C4009243DD /* LoginOrSignupViewController.swift */,
+				0D67773D1CA34FA6009243DD /* DBGWelcomeViewController.swift */,
+				0D67773F1CA35EED009243DD /* DBGForgotPasswordViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -313,6 +319,8 @@
 				0D6777401CA35EED009243DD /* DBGForgotPasswordViewController.swift in Sources */,
 				CB1140691C68E35F0096DDFA /* CreateArticleController.swift in Sources */,
 				CB89D7291C7224B8004C6513 /* MARArticlesCell.swift in Sources */,
+				0D98C9971CA98C4B00F6F9FA /* DBGSimpleTextField.swift in Sources */,
+				0DA507761CA4F99700D4BA66 /* DBGSimpleButton.swift in Sources */,
 				0D1009BE1C9B02B400A54261 /* DBGColors.swift in Sources */,
 				0D7C5E881CA3182400EBBF42 /* SwiftHEXColors.swift in Sources */,
 				0D6F588A1C7F4AB70067B98E /* EditArticleViewController.swift in Sources */,

@@ -15,6 +15,7 @@ class DBGSignupViewController: UIViewController {
     @IBOutlet weak var marEmail: DBGSimpleTextField!
     @IBOutlet weak var marPassword: DBGSimpleTextField!
     @IBOutlet weak var marSignUp: DBGSimplebutton!
+    @IBOutlet weak var dbgExit: DBGCrossButton!
 
 
     override func viewDidLoad() {
@@ -63,6 +64,10 @@ class DBGSignupViewController: UIViewController {
             
             
         }
+    }
+    @IBAction func exitWasPressed(sender: AnyObject) {
+        print("cross was pressed")
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     func presentController(storyboardId: String) {

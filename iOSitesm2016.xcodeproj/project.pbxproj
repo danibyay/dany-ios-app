@@ -10,6 +10,7 @@
 		0D1009BA1C9AFD7800A54261 /* DBGPostsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1009B91C9AFD7800A54261 /* DBGPostsCell.swift */; };
 		0D1009BE1C9B02B400A54261 /* DBGColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1009BD1C9B02B400A54261 /* DBGColors.swift */; };
 		0D1009C01C9B039F00A54261 /* DBGLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1009BF1C9B039F00A54261 /* DBGLoginViewController.swift */; };
+		0D1BA7AB1CAD80EA00CF6555 /* DBGCrossButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1BA7AA1CAD80EA00CF6555 /* DBGCrossButton.swift */; };
 		0D56CA951C77F40D008BF765 /* MyStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D56CA941C77F40D008BF765 /* MyStyle.swift */; };
 		0D67773C1CA336C4009243DD /* LoginOrSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D67773B1CA336C4009243DD /* LoginOrSignupViewController.swift */; };
 		0D67773E1CA34FA6009243DD /* DBGWelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D67773D1CA34FA6009243DD /* DBGWelcomeViewController.swift */; };
@@ -41,6 +42,7 @@
 		0D1009B91C9AFD7800A54261 /* DBGPostsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DBGPostsCell.swift; path = Views/DBGPostsCell.swift; sourceTree = "<group>"; };
 		0D1009BD1C9B02B400A54261 /* DBGColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBGColors.swift; sourceTree = "<group>"; };
 		0D1009BF1C9B039F00A54261 /* DBGLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBGLoginViewController.swift; sourceTree = "<group>"; };
+		0D1BA7AA1CAD80EA00CF6555 /* DBGCrossButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBGCrossButton.swift; sourceTree = "<group>"; };
 		0D56CA941C77F40D008BF765 /* MyStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStyle.swift; sourceTree = "<group>"; };
 		0D67773B1CA336C4009243DD /* LoginOrSignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginOrSignupViewController.swift; sourceTree = "<group>"; };
 		0D67773D1CA34FA6009243DD /* DBGWelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBGWelcomeViewController.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 				0D1009B91C9AFD7800A54261 /* DBGPostsCell.swift */,
 				0D98C9961CA98C4B00F6F9FA /* DBGSimpleTextField.swift */,
 				0DA507751CA4F99700D4BA66 /* DBGSimpleButton.swift */,
+				0D1BA7AA1CAD80EA00CF6555 /* DBGCrossButton.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				CB89D7291C7224B8004C6513 /* MARArticlesCell.swift in Sources */,
 				0D98C9971CA98C4B00F6F9FA /* DBGSimpleTextField.swift in Sources */,
 				0DA507761CA4F99700D4BA66 /* DBGSimpleButton.swift in Sources */,
+				0D1BA7AB1CAD80EA00CF6555 /* DBGCrossButton.swift in Sources */,
 				0D1009BE1C9B02B400A54261 /* DBGColors.swift in Sources */,
 				0D7C5E881CA3182400EBBF42 /* SwiftHEXColors.swift in Sources */,
 				0D6F588A1C7F4AB70067B98E /* EditArticleViewController.swift in Sources */,

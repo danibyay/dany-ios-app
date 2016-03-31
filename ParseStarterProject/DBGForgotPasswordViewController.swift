@@ -10,6 +10,7 @@ import UIKit
 
 class DBGForgotPasswordViewController: UIViewController {
 
+    @IBOutlet weak var dbgExit: DBGCrossButton!
     @IBOutlet weak var dbgEmail: DBGSimpleTextField!
     @IBOutlet weak var dbgForgotPassword: DBGSimplebutton!
     
@@ -36,6 +37,7 @@ class DBGForgotPasswordViewController: UIViewController {
             self.presentViewController(alertController, animated: true, completion: nil)
         }
         
+        
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
@@ -47,6 +49,9 @@ class DBGForgotPasswordViewController: UIViewController {
         self.presentViewController(controller!, animated: true, completion: nil)
     }
 
+    @IBAction func exitWasPressed(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
 
 }
 

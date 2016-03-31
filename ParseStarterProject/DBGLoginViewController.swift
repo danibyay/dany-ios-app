@@ -15,7 +15,7 @@ class DBGLoginViewController: UIViewController {
     @IBOutlet weak var dbgLogin: DBGSimplebutton!
     @IBOutlet weak var dbgPassword: DBGSimpleTextField!
     @IBOutlet weak var dbgEmail: DBGSimpleTextField!
-    
+    @IBOutlet weak var dbgExit: DBGCrossButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,6 +52,10 @@ class DBGLoginViewController: UIViewController {
     func presentController(storyboardId: String) {
         let controller = self.storyboard?.instantiateViewControllerWithIdentifier(storyboardId)
         self.presentViewController(controller!, animated: true, completion: nil)
+    }
+    
+    @IBAction func exitWasPressed(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
 }

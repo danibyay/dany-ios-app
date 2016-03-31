@@ -15,6 +15,7 @@ import GradientCircularProgress
 class CreateArticleController: UIViewController {
     
     @IBOutlet weak var marDescription: UITextField!
+    @IBOutlet weak var dbgPrecio: UITextField!
     @IBOutlet weak var marImage: UIImageView!
     
     override func viewDidLoad() {
@@ -55,12 +56,13 @@ class CreateArticleController: UIViewController {
     @IBAction func saveWasPressed(sender: AnyObject) {
         if marImage.image != nil && marDescription.text != "" {
             let imageData = UIImageJPEGRepresentation(self.marImage.image!, 1.0)
-            let imageFile = PFFile(name: "DinningTable", data: imageData!)
+            let imageFile = PFFile(name: "HouseThumbnail", data: imageData!)
             
-            let object = PFObject(className: "Articles")
+            let object = PFObject(className: "Anuncios")
             object["owner"] = PFUser.currentUser()
-            object["image"] = imageFile
-            object["description"] = self.marDescription.text
+            object["thumbnail"] = imageFile
+            object["Colonia"] = self.marDescription.text
+            object["Precio"] = self.dbgPrecio.text
             
 
             /*
@@ -97,6 +99,7 @@ class CreateArticleController: UIViewController {
                     self.presentViewController(alertController, animated: true, completion: nil)
                     self.marDescription.text=""
                     self.marImage.image = nil
+                    self.dbgPrecio.text=""
                     
                     
                 } else {

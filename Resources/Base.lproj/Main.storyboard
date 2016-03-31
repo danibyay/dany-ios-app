@@ -438,14 +438,14 @@
             </objects>
             <point key="canvasLocation" x="-561" y="49.5"/>
         </scene>
-        <!--Articles-->
+        <!--Resultados-->
         <scene sceneID="NJg-OV-tWh">
             <objects>
                 <tableViewController storyboardIdentifier="ArticlesController" id="oIh-eT-MZI" customClass="MARListOfArticlesViewController" customModule="iOSitesm2016" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="N1V-yr-Rbg">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.93266133039999999" blue="0.40492204859999997" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="geZ-HU-FNh">
                                 <rect key="frame" x="0.0" y="114" width="600" height="44"/>
@@ -464,7 +464,7 @@
                             <outlet property="delegate" destination="oIh-eT-MZI" id="Xut-2M-sq6"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Articles" id="ZsZ-8C-KMK">
+                    <navigationItem key="navigationItem" title="Resultados" id="ZsZ-8C-KMK">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="aRj-J3-OKu">
                             <connections>
                                 <segue destination="MI4-jf-utq" kind="show" identifier="create" id="0o8-6l-gjg"/>
@@ -621,7 +621,7 @@
             </objects>
             <point key="canvasLocation" x="166.5" y="1062.75"/>
         </scene>
-        <!--Edit Article-->
+        <!--Editar Anuncio-->
         <scene sceneID="RxU-6B-TWm">
             <objects>
                 <viewController id="TUG-DM-d10" customClass="EditArticleViewController" customModule="iOSitesm2016" customModuleProvider="target" sceneMemberID="viewController">
@@ -640,19 +640,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="80" y="342" width="240" height="303"/>
+                                    <rect key="frame" x="80" y="342" width="240" height="109"/>
                                 </variation>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m3i-bc-GUl">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Save"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="183" y="667" width="34" height="30"/>
-                                </variation>
-                                <connections>
-                                    <action selector="saveWasPressed:" destination="TUG-DM-d10" eventType="touchUpInside" id="epY-pa-qBZ"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Szm-gL-fuh">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
@@ -678,28 +668,38 @@
                                     <rect key="frame" x="80" y="313" width="147" height="21"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m3i-bc-GUl">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="183" y="476" width="34" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="saveWasPressed:" destination="TUG-DM-d10" eventType="touchUpInside" id="epY-pa-qBZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="4f9-zl-Jxo"/>
-                                <exclude reference="m3i-bc-GUl"/>
                                 <exclude reference="Szm-gL-fuh"/>
                                 <exclude reference="F3h-01-JIx"/>
                                 <exclude reference="wQX-KS-izQ"/>
+                                <exclude reference="m3i-bc-GUl"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="4f9-zl-Jxo"/>
-                                <include reference="m3i-bc-GUl"/>
                                 <include reference="Szm-gL-fuh"/>
                                 <include reference="F3h-01-JIx"/>
                                 <include reference="wQX-KS-izQ"/>
+                                <include reference="m3i-bc-GUl"/>
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Edit Article" id="NTp-SJ-eqw"/>
+                    <navigationItem key="navigationItem" title="Editar Anuncio" id="NTp-SJ-eqw"/>
                     <connections>
                         <outlet property="dbgDescription" destination="4f9-zl-Jxo" id="e4W-LZ-6Z5"/>
                         <outlet property="dbgImage" destination="Szm-gL-fuh" id="igS-02-M8R"/>
@@ -709,7 +709,7 @@
             </objects>
             <point key="canvasLocation" x="2500.5" y="428.25"/>
         </scene>
-        <!--Create Article-->
+        <!--Crear Anuncio-->
         <scene sceneID="Sbr-gj-4if">
             <objects>
                 <viewController storyboardIdentifier="CreateArtcileController" id="MI4-jf-utq" customClass="CreateArticleController" customModule="iOSitesm2016" customModuleProvider="target" sceneMemberID="viewController">
@@ -738,7 +738,12 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="joO-XS-lwS">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Colonia" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="joO-XS-lwS">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Renta mensual" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T4U-0C-chG">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -766,13 +771,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="5DS-RK-Adv" firstAttribute="top" secondItem="T4U-0C-chG" secondAttribute="bottom" constant="30" id="0X6-cO-6D8"/>
                             <constraint firstItem="joO-XS-lwS" firstAttribute="leading" secondItem="8N5-nx-4pp" secondAttribute="leadingMargin" constant="10" id="2NP-Qw-ZU9"/>
                             <constraint firstItem="5DS-RK-Adv" firstAttribute="leading" secondItem="joO-XS-lwS" secondAttribute="leading" id="8WZ-pQ-SmY"/>
                             <constraint firstAttribute="trailing" secondItem="vOa-H4-ydI" secondAttribute="trailing" id="GOP-Q4-LT0"/>
+                            <constraint firstItem="T4U-0C-chG" firstAttribute="leading" secondItem="joO-XS-lwS" secondAttribute="leading" id="H5c-Df-RJx"/>
                             <constraint firstItem="5DS-RK-Adv" firstAttribute="trailing" secondItem="joO-XS-lwS" secondAttribute="trailing" id="NxB-kN-npc"/>
                             <constraint firstItem="vOa-H4-ydI" firstAttribute="leading" secondItem="8N5-nx-4pp" secondAttribute="leading" id="RTx-aD-N9C"/>
                             <constraint firstItem="joO-XS-lwS" firstAttribute="top" secondItem="vOa-H4-ydI" secondAttribute="bottom" constant="36" id="c8E-vX-3Hz"/>
-                            <constraint firstItem="5DS-RK-Adv" firstAttribute="top" secondItem="joO-XS-lwS" secondAttribute="bottom" constant="24" id="lPH-yD-Ogm"/>
+                            <constraint firstItem="T4U-0C-chG" firstAttribute="top" secondItem="joO-XS-lwS" secondAttribute="bottom" constant="35" id="mGf-ao-lOp"/>
+                            <constraint firstItem="T4U-0C-chG" firstAttribute="trailing" secondItem="joO-XS-lwS" secondAttribute="trailing" id="tYt-qu-rNN"/>
                             <constraint firstAttribute="trailingMargin" secondItem="joO-XS-lwS" secondAttribute="trailing" constant="10" id="xEp-yh-oNs"/>
                             <constraint firstItem="vOa-H4-ydI" firstAttribute="top" secondItem="NZr-zf-p5h" secondAttribute="bottom" id="zI8-g2-97s"/>
                         </constraints>
@@ -780,40 +788,48 @@
                             <mask key="subviews">
                                 <exclude reference="vOa-H4-ydI"/>
                                 <exclude reference="joO-XS-lwS"/>
+                                <exclude reference="T4U-0C-chG"/>
                                 <exclude reference="5DS-RK-Adv"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="2NP-Qw-ZU9"/>
-                                <exclude reference="c8E-vX-3Hz"/>
-                                <exclude reference="xEp-yh-oNs"/>
-                                <exclude reference="8WZ-pQ-SmY"/>
-                                <exclude reference="NxB-kN-npc"/>
-                                <exclude reference="lPH-yD-Ogm"/>
                                 <exclude reference="GOP-Q4-LT0"/>
                                 <exclude reference="RTx-aD-N9C"/>
                                 <exclude reference="zI8-g2-97s"/>
+                                <exclude reference="2NP-Qw-ZU9"/>
+                                <exclude reference="c8E-vX-3Hz"/>
+                                <exclude reference="xEp-yh-oNs"/>
+                                <exclude reference="H5c-Df-RJx"/>
+                                <exclude reference="mGf-ao-lOp"/>
+                                <exclude reference="tYt-qu-rNN"/>
+                                <exclude reference="0X6-cO-6D8"/>
+                                <exclude reference="8WZ-pQ-SmY"/>
+                                <exclude reference="NxB-kN-npc"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="vOa-H4-ydI"/>
                                 <include reference="joO-XS-lwS"/>
+                                <include reference="T4U-0C-chG"/>
                                 <include reference="5DS-RK-Adv"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="2NP-Qw-ZU9"/>
-                                <include reference="c8E-vX-3Hz"/>
-                                <include reference="xEp-yh-oNs"/>
-                                <include reference="8WZ-pQ-SmY"/>
-                                <include reference="NxB-kN-npc"/>
-                                <include reference="lPH-yD-Ogm"/>
                                 <include reference="GOP-Q4-LT0"/>
                                 <include reference="RTx-aD-N9C"/>
                                 <include reference="zI8-g2-97s"/>
+                                <include reference="2NP-Qw-ZU9"/>
+                                <include reference="c8E-vX-3Hz"/>
+                                <include reference="xEp-yh-oNs"/>
+                                <include reference="H5c-Df-RJx"/>
+                                <include reference="mGf-ao-lOp"/>
+                                <include reference="tYt-qu-rNN"/>
+                                <include reference="0X6-cO-6D8"/>
+                                <include reference="8WZ-pQ-SmY"/>
+                                <include reference="NxB-kN-npc"/>
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Create Article" id="pTP-rl-umy">
+                    <navigationItem key="navigationItem" title="Crear Anuncio" id="pTP-rl-umy">
                         <barButtonItem key="rightBarButtonItem" systemItem="camera" id="mki-hp-euc">
                             <connections>
                                 <action selector="cameraWasPressed:" destination="MI4-jf-utq" id="jTo-MF-chP"/>
@@ -821,6 +837,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="dbgPrecio" destination="T4U-0C-chG" id="hqe-lJ-fAm"/>
                         <outlet property="marDescription" destination="joO-XS-lwS" id="zZa-hJ-2sI"/>
                         <outlet property="marImage" destination="vOa-H4-ydI" id="eYJ-dr-hjW"/>
                     </connections>

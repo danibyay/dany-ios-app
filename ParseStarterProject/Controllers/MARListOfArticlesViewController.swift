@@ -2,7 +2,7 @@
 //  MARListOfArticlesViewController.swift
 //  iOSitesm2016
 //
-//  Created by miguelicious on 2/15/16.
+//  Created by Daniela Becerra on 2/15/16.
 //  Copyright © 2016 Parse. All rights reserved.
 //
 
@@ -12,7 +12,8 @@ import Parse
 class MARListOfArticlesViewController: UITableViewController {
     
     var photos : [PFFile] = []
-    var titles : [String] = []
+    var colonias : [String] = []
+    var precios : [String] = []
     var descriptionToPass: String!
     var imageDataToPass: NSData!
     var myobjects: [PFObject] = []
@@ -28,19 +29,20 @@ class MARListOfArticlesViewController: UITableViewController {
     
     func loadItems() {
         
-        let query = PFQuery(className: "Articles")
+        let query = PFQuery(className: "Anuncios")
         query.whereKey("owner", equalTo: (PFUser.currentUser())! )
-        query.selectKeys(["description", "image"])
+        query.selectKeys(["Colonia", "Precio", "thumbnail"])
         query.orderByDescending("createdAt")
         
         query.findObjectsInBackgroundWithBlock { (result: [PFObject]?, error: NSError?) -> Void in
             if error == nil {
                 // Success
-                self.titles.removeAll()
+                self.colonias.removeAll()
                 self.photos.removeAll()
                 for object in result! {
-                    self.titles.append(object["description"] as! String)
-                    self.photos.append(object["image"] as! PFFile)
+                    self.colonias.append(object["Colonia"] as! String)
+                    self.precios.append(object["Precio"] as! String)
+                    self.photos.append(object["thumbnail"] as! PFFile)
                 }
                 self.danyTableView.reloadData()
                 self.refreshControl?.endRefreshing()
@@ -72,17 +74,18 @@ extension MARListOfArticlesViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! MARArticlesCell
-        cell.marLabel.text = titles[indexPath.row]
+        cell.dbgColonia.text = colonias[indexPath.row]
+        cell.dbgPrecio.text = precios[indexPath.row]
         
         photos[indexPath.row].getDataInBackgroundWithBlock({ (data: NSData?, error: NSError?) -> Void in
-            cell.marImage.image = UIImage(data: data!)
+            cell.dbgFoto.image = UIImage(data: data!)
         })
         
         return cell
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return titles.count
+        return colonias.count
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
@@ -93,7 +96,8 @@ extension MARListOfArticlesViewController {
         let indexPath = tableView.indexPathForSelectedRow;
         let currentCell = tableView.cellForRowAtIndexPath(indexPath!) as! MARArticlesCell!;
         
-        descriptionToPass = currentCell.marLabel!.text
+        descriptionToPass = currentCell.dbgColonia!.text
+        
         do{
             imageDataToPass = try photos[indexPath!.row].getData()
         }catch _ {

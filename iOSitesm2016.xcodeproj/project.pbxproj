@@ -90,6 +90,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D33E7F11CAC984300661400 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				CBD260A51C63A65E005BB9A1 /* DBGSignupViewController.swift */,
+				0D1009BF1C9B039F00A54261 /* DBGLoginViewController.swift */,
+				0D67773B1CA336C4009243DD /* LoginOrSignupViewController.swift */,
+				0D67773D1CA34FA6009243DD /* DBGWelcomeViewController.swift */,
+				0D67773F1CA35EED009243DD /* DBGForgotPasswordViewController.swift */,
+			);
+			name = Start;
+			sourceTree = "<group>";
+		};
+		0D33E7F21CAC992B00661400 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				0D56CA941C77F40D008BF765 /* MyStyle.swift */,
+				0D1009BD1C9B02B400A54261 /* DBGColors.swift */,
+				0D7C5E871CA3182400EBBF42 /* SwiftHEXColors.swift */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
 		2203A161CA4B1DFCD752997F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,14 +152,12 @@
 		81BA81471A49DA1800E65899 /* ParseStarterProject */ = {
 			isa = PBXGroup;
 			children = (
+				0D33E7F21CAC992B00661400 /* Settings */,
 				CB89D7271C722483004C6513 /* Views */,
 				CBD260A71C63A6CF005BB9A1 /* Controllers */,
 				81BA814A1A49DA1800E65899 /* AppDelegate.swift */,
 				814C3AC61B69877600E307BB /* Main.storyboard */,
 				CBD260A31C639A9D005BB9A1 /* Splash.storyboard */,
-				0D56CA941C77F40D008BF765 /* MyStyle.swift */,
-				0D1009BD1C9B02B400A54261 /* DBGColors.swift */,
-				0D7C5E871CA3182400EBBF42 /* SwiftHEXColors.swift */,
 			);
 			path = ParseStarterProject;
 			sourceTree = "<group>";
@@ -181,14 +201,10 @@
 		CBD260A71C63A6CF005BB9A1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				CBD260A51C63A65E005BB9A1 /* DBGSignupViewController.swift */,
-				0D1009BF1C9B039F00A54261 /* DBGLoginViewController.swift */,
+				0D33E7F11CAC984300661400 /* Start */,
 				CB1140681C68E35F0096DDFA /* CreateArticleController.swift */,
 				CB89D7251C72233A004C6513 /* MARListOfArticlesViewController.swift */,
 				0D6F58891C7F4AB70067B98E /* EditArticleViewController.swift */,
-				0D67773B1CA336C4009243DD /* LoginOrSignupViewController.swift */,
-				0D67773D1CA34FA6009243DD /* DBGWelcomeViewController.swift */,
-				0D67773F1CA35EED009243DD /* DBGForgotPasswordViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";

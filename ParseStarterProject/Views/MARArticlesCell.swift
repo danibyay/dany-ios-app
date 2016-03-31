@@ -10,8 +10,8 @@ import UIKit
 
 class MARArticlesCell: UITableViewCell {
 
-    @IBOutlet weak var marImage: UIImageView!
-    @IBOutlet weak var marLabel: UILabel!
-    
+    @IBOutlet weak var dbgFoto: UIImageView!
+    @IBOutlet weak var dbgPrecio: UILabel!
+    @IBOutlet weak var dbgColonia: UILabel!
     
 }

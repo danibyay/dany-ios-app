@@ -88,12 +88,12 @@ class EditArticleViewController: UIViewController {
                 }
                 //update object
                 query.getObjectInBackgroundWithId(self.currentId) {
-                    (article: PFObject?, error: NSError?) -> Void in
+                    (anuncio: PFObject?, error: NSError?) -> Void in
                     if error != nil {
                         print(error)
-                    } else if let article = article {
-                        article["description"] = self.dbgDescription.text
-                        self.saveToParse(article, progress: progress)
+                    } else if let anuncio = anuncio {
+                        anuncio["Colonia"] = self.dbgDescription.text
+                        self.saveToParse(anuncio, progress: progress)
                     }
                 }
             } else {

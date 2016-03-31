@@ -14,43 +14,51 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6I4-LD-PHP">
-                        <rect key="frame" x="0.0" y="20" width="320" height="131"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6I4-LD-PHP">
+                        <rect key="frame" x="15" y="15" width="90" height="120"/>
                         <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JVx-Xn-AIa">
-                        <rect key="frame" x="0.0" y="120" width="320" height="30"/>
+                        <rect key="frame" x="0.0" y="5" width="320" height="140"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKI-TB-A3U">
-                                <rect key="frame" x="10" y="0.0" width="310" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Colonia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZY-fR-KJ1">
+                                <rect key="frame" x="122" y="17" width="173" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Precio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxm-Dz-5Lx">
+                                <rect key="frame" x="122" y="46" width="173" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="0.40805495689655175" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="XKI-TB-A3U" firstAttribute="top" secondItem="JVx-Xn-AIa" secondAttribute="top" id="8jM-Ve-xEZ"/>
-                            <constraint firstAttribute="trailing" secondItem="XKI-TB-A3U" secondAttribute="trailing" id="JN5-oI-RKf"/>
-                            <constraint firstAttribute="bottom" secondItem="XKI-TB-A3U" secondAttribute="bottom" id="YfW-Bt-GuA"/>
-                            <constraint firstItem="XKI-TB-A3U" firstAttribute="leading" secondItem="JVx-Xn-AIa" secondAttribute="leading" constant="10" id="Z0W-Pq-WZN"/>
-                            <constraint firstAttribute="height" constant="30" id="i55-Pb-o0f"/>
+                            <constraint firstItem="zxm-Dz-5Lx" firstAttribute="leading" secondItem="ZZY-fR-KJ1" secondAttribute="leading" id="UuA-4h-cE9"/>
+                            <constraint firstItem="ZZY-fR-KJ1" firstAttribute="top" secondItem="JVx-Xn-AIa" secondAttribute="top" constant="17" id="eKa-hL-vw9"/>
+                            <constraint firstItem="zxm-Dz-5Lx" firstAttribute="trailing" secondItem="ZZY-fR-KJ1" secondAttribute="trailing" id="efg-2i-WX6"/>
+                            <constraint firstItem="zxm-Dz-5Lx" firstAttribute="top" secondItem="ZZY-fR-KJ1" secondAttribute="bottom" constant="8" id="hSA-N9-pXU"/>
+                            <constraint firstAttribute="height" constant="140" id="i55-Pb-o0f"/>
+                            <constraint firstAttribute="trailing" secondItem="ZZY-fR-KJ1" secondAttribute="trailing" constant="25" id="rUy-Ga-HoR"/>
                         </constraints>
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="6I4-LD-PHP" firstAttribute="top" secondItem="YqN-b9-iDd" secondAttribute="top" constant="20" id="8CW-Rs-5er"/>
-                    <constraint firstAttribute="bottom" secondItem="JVx-Xn-AIa" secondAttribute="bottom" id="Ezy-ld-LLW"/>
+                    <constraint firstItem="6I4-LD-PHP" firstAttribute="top" secondItem="YqN-b9-iDd" secondAttribute="top" constant="15" id="8CW-Rs-5er"/>
+                    <constraint firstAttribute="bottom" secondItem="JVx-Xn-AIa" secondAttribute="bottom" constant="5" id="Ezy-ld-LLW"/>
                     <constraint firstAttribute="trailing" secondItem="JVx-Xn-AIa" secondAttribute="trailing" id="J4S-yP-EUD"/>
-                    <constraint firstAttribute="trailing" secondItem="6I4-LD-PHP" secondAttribute="trailing" id="OGw-J8-chQ"/>
-                    <constraint firstAttribute="bottom" secondItem="6I4-LD-PHP" secondAttribute="bottom" id="OcE-Q0-f1p"/>
+                    <constraint firstAttribute="trailing" secondItem="6I4-LD-PHP" secondAttribute="trailing" constant="215" id="OGw-J8-chQ"/>
+                    <constraint firstAttribute="bottom" secondItem="6I4-LD-PHP" secondAttribute="bottom" constant="15" id="OcE-Q0-f1p"/>
+                    <constraint firstItem="ZZY-fR-KJ1" firstAttribute="leading" secondItem="6I4-LD-PHP" secondAttribute="trailing" constant="17" id="Sp1-dp-1Ku"/>
                     <constraint firstItem="JVx-Xn-AIa" firstAttribute="leading" secondItem="YqN-b9-iDd" secondAttribute="leading" id="a3f-hI-KHj"/>
-                    <constraint firstItem="6I4-LD-PHP" firstAttribute="leading" secondItem="YqN-b9-iDd" secondAttribute="leading" id="ovu-Df-3Sf"/>
+                    <constraint firstItem="6I4-LD-PHP" firstAttribute="leading" secondItem="YqN-b9-iDd" secondAttribute="leading" constant="15" id="ovu-Df-3Sf"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="marImage" destination="6I4-LD-PHP" id="jL0-eW-EXK"/>
-                <outlet property="marLabel" destination="XKI-TB-A3U" id="vkc-aJ-W5a"/>
+                <outlet property="dbgColonia" destination="ZZY-fR-KJ1" id="9t7-iB-jHN"/>
+                <outlet property="dbgFoto" destination="6I4-LD-PHP" id="vii-Am-24K"/>
+                <outlet property="dbgPrecio" destination="zxm-Dz-5Lx" id="ucE-gF-v0I"/>
             </connections>
             <point key="canvasLocation" x="289" y="206.5"/>
         </tableViewCell>

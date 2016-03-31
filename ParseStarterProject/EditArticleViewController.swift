@@ -72,8 +72,8 @@ class EditArticleViewController: UIViewController {
         let progress = GradientCircularProgress()
         progress.show(message: "Saving...", style: MyStyle())
         
-        let query = PFQuery(className: "Articles")
-        query.whereKey("description", equalTo: initialDescription)
+        let query = PFQuery(className: "Anuncios")
+        query.whereKey("Colonia", equalTo: initialDescription)
         
         //get id of current article object ASYNC
         query.findObjectsInBackgroundWithBlock {

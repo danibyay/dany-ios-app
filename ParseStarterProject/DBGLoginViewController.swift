@@ -36,12 +36,14 @@ class DBGLoginViewController: UIViewController {
         self.view.endEditing(true)
     }
     
+    
     @IBAction func loginWasPressed(sender: AnyObject) {
         if dbgEmail.text != "" && dbgPassword.text != "" {
             PFUser.logInWithUsernameInBackground(dbgEmail.text!, password: dbgPassword.text!, block: { (user: PFUser?, error: NSError?) -> Void in
                 if error == nil {
                     print("user logged in successfully")
                     self.presentController("Bienvenido")
+                    print("user is new \(user!.isNew)")
                 } else {
                     print(error)
                 }

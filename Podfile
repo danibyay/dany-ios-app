@@ -6,5 +6,4 @@ use_frameworks!
 
 target 'iOSitesm2016' do
     pod 'GradientCircularProgress', :git => 'https://github.com/keygx/GradientCircularProgress'
-
 end

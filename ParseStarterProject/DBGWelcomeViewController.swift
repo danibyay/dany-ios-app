@@ -49,11 +49,11 @@ class DBGWelcomeViewController: UIViewController {
     }
     
     func setupOnboarding(){
-        let firstPage = OnboardingContentViewController(title: "Busca", body: "Cuartos en renta cerca de tu escuela", image: UIImage(named: "logo"), buttonText: nil)
+        let firstPage = OnboardingContentViewController(title: "Busca", body: "Cuartos en renta cerca de tu escuela", image: UIImage(named: "busca"), buttonText: nil)
             { () -> Void in }
-        let secondPage = OnboardingContentViewController(title: "Anuncia", body: "Tu cuarto disponible y todos sus detalles", image: UIImage(named: "logo"), buttonText: nil){ () -> Void in }
+        let secondPage = OnboardingContentViewController(title: "Anuncia", body: "Tu cuarto disponible y todos sus detalles", image: UIImage(named: "Anuncia"), buttonText: nil){ () -> Void in }
         
-        let thirdPage = OnboardingContentViewController(title: "Encuentra", body: "Dónde y con quién vivir de acuerdo a tus necesidades", image: UIImage(named: "logo"), buttonText: "Comenzar")
+        let thirdPage = OnboardingContentViewController(title: "Encuentra", body: "Dónde y con quién vivir de acuerdo a tus necesidades", image: UIImage(named: "encuentra"), buttonText: "Comenzar")
             { () -> Void in
                 self.onboardingVC.dismissViewControllerAnimated(true, completion: nil)
             }
@@ -67,9 +67,10 @@ class DBGWelcomeViewController: UIViewController {
         onboardingVC.titleTextColor = UIColor.blackColor()
         onboardingVC.bodyTextColor = UIColor.blackColor()
         //que skip sea negro
+        onboardingVC.bottomPadding = 40
+        onboardingVC.underTitlePadding = 50
+        onboardingVC.bodyFontSize = 16
         onboardingVC.view.backgroundColor = UIColor.danyContrastColor()
-        
-        
         
     }
 

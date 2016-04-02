@@ -30,7 +30,7 @@ class MARListOfArticlesViewController: UITableViewController {
     func loadItems() {
         
         let query = PFQuery(className: "Anuncios")
-        query.whereKey("owner", equalTo: (PFUser.currentUser())! )
+        //query.whereKey("owner", equalTo: (PFUser.currentUser())! )
         query.selectKeys(["Colonia", "Precio", "thumbnail"])
         query.orderByDescending("createdAt")
         
@@ -103,7 +103,7 @@ extension MARListOfArticlesViewController {
         }catch _ {
             print("cant use image")
         }
-        performSegueWithIdentifier("edit", sender: self)
+        //performSegueWithIdentifier("edit", sender: self)
     }
     
 }

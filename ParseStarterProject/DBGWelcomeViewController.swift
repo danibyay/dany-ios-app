@@ -25,7 +25,8 @@ class DBGWelcomeViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
-        if counter == 0 && PFUser.currentUser()?.isNew == true{
+        //&& PFUser.currentUser()?.isNew == true
+        if counter == 0 {
             self.presentViewController(onboardingVC, animated: false, completion: nil)
             counter++
         }
@@ -34,6 +35,15 @@ class DBGWelcomeViewController: UIViewController {
     func setColors(){
         self.view.backgroundColor = UIColor.danyBaseColor()
         DBGAnunciar.layer.backgroundColor = UIColor.danySecondContrastColor().CGColor
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
+
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.Default
+        
     }
 
     @IBAction func buscarWasPressed(sender: AnyObject) {
@@ -57,20 +67,21 @@ class DBGWelcomeViewController: UIViewController {
             { () -> Void in
                 self.onboardingVC.dismissViewControllerAnimated(true, completion: nil)
             }
-        thirdPage.buttonTextColor = UIColor.blackColor()
-        onboardingVC = OnboardingViewController(backgroundImage: nil, contents: [firstPage, secondPage, thirdPage])
+        //thirdPage.buttonTextColor = UIColor.blackColor()
+        onboardingVC = OnboardingViewController(backgroundImage: UIImage(named: "bed"), contents: [firstPage, secondPage, thirdPage])
                 onboardingVC.allowSkipping = true
                 onboardingVC.skipHandler = {() -> Void in
                     self.onboardingVC.dismissViewControllerAnimated(true, completion: nil)
                 }
-        onboardingVC.shouldMaskBackground = false
-        onboardingVC.titleTextColor = UIColor.blackColor()
-        onboardingVC.bodyTextColor = UIColor.blackColor()
+        onboardingVC.shouldBlurBackground = true
+        //onboardingVC.shouldMaskBackground = false
+        //onboardingVC.titleTextColor = UIColor.blackColor()
+        //onboardingVC.bodyTextColor = UIColor.blackColor()
         //que skip sea negro
-        onboardingVC.bottomPadding = 40
-        onboardingVC.underTitlePadding = 50
+        onboardingVC.bottomPadding = 20
+        onboardingVC.underTitlePadding = 35
         onboardingVC.bodyFontSize = 16
-        onboardingVC.view.backgroundColor = UIColor.danyContrastColor()
+        //onboardingVC.view.backgroundColor = UIColor.danyContrastColor()
         
     }
 

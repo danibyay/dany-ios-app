@@ -13,6 +13,7 @@ class DBGSimplebutton: UIButton {
     required init?(coder aDecoder: NSCoder){
         super.init(coder: aDecoder)
         self.layer.backgroundColor = UIColor.danyContrastColor().CGColor
+        self.layer.borderColor = UIColor.blackColor().CGColor
     }
   
 }

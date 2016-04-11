@@ -14,11 +14,13 @@ extension UIColor {
     }
     
     class func danyContrastColor() -> UIColor {
-        return UIColor(hexString: "#4CD964")!
+        return UIColor(hexString: "#9AB0E6")!
+        //4CD964 era el verde
     }
     
     class func danySecondContrastColor() -> UIColor {
-        return UIColor(hexString: "FFCC00")!
+        return UIColor(hexString: "9AB0E6")!
+        //FFCC00 era el amarillo
     }
     
 }

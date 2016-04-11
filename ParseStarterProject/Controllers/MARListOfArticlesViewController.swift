@@ -48,6 +48,7 @@ class MARListOfArticlesViewController: UITableViewController {
                 self.refreshControl?.endRefreshing()
             } else {
                 // Error
+                print("no objects found, sorry")
             }
         }
     }

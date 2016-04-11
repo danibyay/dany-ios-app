@@ -12,7 +12,7 @@ class DBGSimpleTextField: UITextField {
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        self.layer.borderWidth = 2
-        self.layer.borderColor = UIColor.danyContrastColor().CGColor
+        self.layer.borderWidth = 1
+        self.layer.borderColor = UIColor.blackColor().CGColor
     }
 }
